@@ -173,7 +173,7 @@ public class EZDialog {
 
             View titleDivider = v.findViewById(R.id.title_divider);
 
-            titleDivider.setVisibility(showTitleDivider ? View.VISIBLE : View.GONE);
+            titleDivider.setVisibility(showTitleDivider ? View.VISIBLE : View.INVISIBLE);
 
             tvTitle.setText(title);
             tvMessage.setText(message);
