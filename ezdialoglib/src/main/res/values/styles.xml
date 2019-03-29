@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="UpTheme" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+        <item name="android:windowAnimationStyle">@style/UpThemeAnims</item>
+    </style>
+
+    <style name="DownTheme" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+        <item name="android:windowAnimationStyle">@style/DownThemeAnims</item>
+    </style>
+
+    <style name="UpThemeAnims">
+        <item name="android:windowEnterAnimation">@anim/up_enter</item>
+        <item name="android:windowExitAnimation">@anim/up_exit</item>
+    </style>
+
+    <style name="DownThemeAnims">
+        <item name="android:windowEnterAnimation">@anim/down_enter</item>
+        <item name="android:windowExitAnimation">@anim/down_exit</item>
+    </style>
+
+
+</resources>
