@@ -3,7 +3,9 @@ package spencerstudios.com.ezdialoglib;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
+import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -29,7 +31,8 @@ public class EZDialog {
                 titleDividerColor,
                 buttonTextColor,
                 titleTextColor,
-                messageTextColor;
+                messageTextColor,
+                fontId;
 
         private boolean
                 cancelOnTouchOutside = true,
@@ -44,6 +47,8 @@ public class EZDialog {
 
         private Animation animation;
 
+        private Font font;
+
         public Builder(Context context) {
             this.context = context;
         }
@@ -55,6 +60,16 @@ public class EZDialog {
 
         public Builder setCancelableOnTouchOutside(boolean cancelOnTouchOutside) {
             this.cancelOnTouchOutside = cancelOnTouchOutside;
+            return this;
+        }
+
+        public Builder setFont(Font font) {
+            this.font = font;
+            return this;
+        }
+
+        public Builder setCustomFont(int fontId) {
+            this.fontId = fontId;
             return this;
         }
 
@@ -175,6 +190,31 @@ public class EZDialog {
 
             titleDivider.setVisibility(showTitleDivider ? View.VISIBLE : View.INVISIBLE);
 
+            if (font != null) {
+                Typeface tf;
+                if (font == Font.COMFORTAA) {
+                    tf = ResourcesCompat.getFont(context, R.font.comfortaa);
+                } else if (font == Font.FINGER_PAINT) {
+                    tf = ResourcesCompat.getFont(context, R.font.finger_paint);
+                } else {
+                    tf = ResourcesCompat.getFont(context, R.font.quicksand_medium);
+                }
+                tvTitle.setTypeface(tf);
+                tvMessage.setTypeface(tf);
+                btnPositive.setTypeface(tf);
+                btnNegative.setTypeface(tf);
+                btnNeutral.setTypeface(tf);
+            }
+
+            if (fontId != 0) {
+                Typeface tf = ResourcesCompat.getFont(context, fontId);
+                tvTitle.setTypeface(tf);
+                tvMessage.setTypeface(tf);
+                btnPositive.setTypeface(tf);
+                btnNegative.setTypeface(tf);
+                btnNeutral.setTypeface(tf);
+            }
+
             tvTitle.setText(title);
             tvMessage.setText(message);
 
@@ -255,7 +295,6 @@ public class EZDialog {
             } else {
                 btnNeutral.setVisibility(View.GONE);
             }
-
             dialog.show();
         }
     }

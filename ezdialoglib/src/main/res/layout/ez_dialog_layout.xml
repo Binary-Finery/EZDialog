@@ -33,13 +33,13 @@
             android:id="@+id/title_divider"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#727272" />
+            android:background="#e0e0e0" />
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:scrollbars="none"
-            android:fillViewport="true">
+            android:fillViewport="true"
+            android:scrollbars="none">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -59,34 +59,37 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
                     android:layout_marginBottom="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
-                    android:layout_gravity="center_horizontal"
                     android:gravity="center_horizontal"
                     android:orientation="horizontal">
 
                     <Button
                         android:id="@+id/cancel"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_weight=".33"
                         android:background="@android:color/transparent"
                         android:padding="8dp"
                         tools:ignore="ButtonStyle" />
 
                     <Button
                         android:id="@+id/neutral"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_weight=".33"
                         android:background="@android:color/transparent"
                         android:padding="8dp"
                         tools:ignore="ButtonStyle" />
 
                     <Button
                         android:id="@+id/confirm"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_weight=".33"
                         android:background="@android:color/transparent"
                         android:padding="8dp"
                         tools:ignore="ButtonStyle" />
