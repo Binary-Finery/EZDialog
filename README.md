@@ -1,0 +1,2 @@
+# EZDialog
+customisable alert dialog
