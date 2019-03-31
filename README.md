@@ -30,6 +30,9 @@ dependencies {
 ## Example Usage
 
 ```java
+
+//build a simple dialog...
+
 new EZDialog.Builder(this)
 	.setTitle("EXDialog")
 	.setMessage("EZDialog example")
