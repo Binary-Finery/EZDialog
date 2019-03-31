@@ -26,3 +26,27 @@ dependencies {
 	implementation 'com.github.Binary-Finery:EZDialog:1.0.2'
 }
 ```
+
+## Example Usage
+
+```java
+new EZDialog.Builder(this)
+	.setTitle("EXDialog")
+                .setMessage("EZDialog example")
+                .setPositiveBtnText("okay")
+                .setNeutralBtnText("close")
+                .setCancelableOnTouchOutside(false)
+                .OnPositiveClicked(new EZDialogListener() {
+                    @Override
+                    public void OnClick() {
+                        //todo
+                    }
+                })
+                .OnNegativeClicked(new EZDialogListener() {
+                    @Override
+                    public void OnClick() {
+                        //todo
+                    }
+                })
+                .build();
+```
