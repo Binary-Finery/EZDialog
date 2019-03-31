@@ -37,7 +37,7 @@ new EZDialog.Builder(this)
 	.setTitle("EXDialog")
 	.setMessage("EZDialog example")
 	.setPositiveBtnText("okay")
-	.setNeutralBtnText("close")
+	.setNegativeBtnText("close")
 	.setCancelableOnTouchOutside(false)
 	.OnPositiveClicked(new EZDialogListener() {
 		@Override
