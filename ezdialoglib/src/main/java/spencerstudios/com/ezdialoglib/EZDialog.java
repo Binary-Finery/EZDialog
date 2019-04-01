@@ -148,11 +148,6 @@ public class EZDialog {
             return this;
         }
 
-        public Builder isCancellable(boolean cancel) {
-            this.cancelOnTouchOutside = cancel;
-            return this;
-        }
-
         public void build() {
 
             int style;
