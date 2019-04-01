@@ -62,7 +62,7 @@ new EZDialog.Builder(this)
 .setNeutralBtnText(String);
 .showTitleDivider(boolean);
 .setTitleDividerLineColor(int);
-.setTitleTextColor(intr);
+.setTitleTextColor(int);
 .setMessageTextColor(int);
 .setBackgroundColor(int);
 .setHeaderColor(int);
@@ -74,4 +74,5 @@ new EZDialog.Builder(this)
 .setCancelableOnTouchOutside(boolean);
 .setFont(Font);
 .setCustomFont(int);
+.build();
 ```
