@@ -23,7 +23,7 @@ Add the dependency to your module build.gradle:
 
 ```java
 dependencies {
-	implementation 'com.github.Binary-Finery:EZDialog:1.0.2'
+	implementation 'com.github.Binary-Finery:EZDialog:1.0.3'
 }
 ```
 
