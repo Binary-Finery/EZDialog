@@ -52,4 +52,26 @@ new EZDialog.Builder(this)
                     }
                 })
 	.build();
+	
+//all available methods
+
+.setTitle(String);
+.setMessage(String);
+.setPositiveBtnText(String);
+.setNegativeBtnText(String) ;
+.setNeutralBtnText(String);
+.showTitleDivider(boolean);
+.setTitleDividerLineColor(int);
+.setTitleTextColor(intr);
+.setMessageTextColor(int);
+.setBackgroundColor(int);
+.setHeaderColor(int);
+.setButtonTextColor(int);
+.OnPositiveClicked(EZDialogListener);
+.OnNegativeClicked(EZDialogListener);
+.OnNeutralClicked(EZDialogListener);
+.setAnimation(Animation);
+.setCancelableOnTouchOutside(boolean);
+.setFont(Font);
+.setCustomFont(int);
 ```
