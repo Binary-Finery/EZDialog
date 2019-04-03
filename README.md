@@ -23,7 +23,7 @@ Add the dependency to your module build.gradle:
 
 ```java
 dependencies {
-	implementation 'com.github.Binary-Finery:EZDialog:1.0.2'
+	implementation 'com.github.Binary-Finery:EZDialog:1.0.3'
 }
 ```
 
@@ -52,4 +52,27 @@ new EZDialog.Builder(this)
                     }
                 })
 	.build();
+	
+//all available methods
+
+.setTitle(String);
+.setMessage(String);
+.setPositiveBtnText(String);
+.setNegativeBtnText(String) ;
+.setNeutralBtnText(String);
+.showTitleDivider(boolean);
+.setTitleDividerLineColor(int);
+.setTitleTextColor(int);
+.setMessageTextColor(int);
+.setBackgroundColor(int);
+.setHeaderColor(int);
+.setButtonTextColor(int);
+.OnPositiveClicked(EZDialogListener);
+.OnNegativeClicked(EZDialogListener);
+.OnNeutralClicked(EZDialogListener);
+.setAnimation(Animation);
+.setCancelableOnTouchOutside(boolean);
+.setFont(Font);
+.setCustomFont(int);
+.build();
 ```
