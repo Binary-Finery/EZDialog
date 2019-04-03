@@ -6,6 +6,8 @@
 
 Extremely simple to use and highly customisable alert dialog library
 
+To see this library in action, you can download the demo app from Google Playstore by clicking [here](https://play.google.com/store/apps/details?id=com.spencerstudios.ezdialogdemoapp) 
+
 ## Installation
 
 Add this into your root build.gradle file:
