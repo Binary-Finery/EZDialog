@@ -1,5 +1,6 @@
 # EZDialog
 [![](https://jitpack.io/v/Binary-Finery/EZDialog.svg)](https://jitpack.io/#Binary-Finery/EZDialog)
+[![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-EZDialog-green.svg?style=flat )]( https://android-arsenal.com/details/1/7610 )
 
 - min SDK 17
 - written in Java
