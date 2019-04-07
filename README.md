@@ -10,6 +10,7 @@ Extremely simple to use and highly customisable alert dialog library
 To see this library in action, you can download the demo app from Google Playstore by clicking [here](https://play.google.com/store/apps/details?id=com.spencerstudios.ezdialogdemoapp) 
 
 ![Screenshot](https://github.com/Binary-Finery/EZDialog/blob/master/screenshots/56182474_2103237696464383_6230825982496866304_n.png)
+![Screenshot](https://github.com/Binary-Finery/EZDialog/blob/master/screenshots/56464287_857948101264164_5213459504087171072_n.png)
 
 
 ## Installation
